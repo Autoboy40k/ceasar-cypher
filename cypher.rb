@@ -23,6 +23,12 @@ puts input_sentence.length
 
 alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
-puts alphabet[input_number]
+# puts alphabet[input_number]
+ltr_array = Array.new
 
-# 
+input_sentence.each_char do |letter|    # better to call it just "name" in your code
+       ltr_array.push(letter)
+       
+     end
+
+     print ltr_array
